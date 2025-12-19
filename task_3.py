@@ -115,7 +115,7 @@ def rabin_karp_search(main_string, substring):
 
 
 def process_search(file_name: str, pattern):
-    print(f"\nStarting search of '{pattern}' in '{file_name}'")
+    print(f"--- Starting search of '{pattern}' in '{file_name}' ---")
 
     with open(file_name, "r") as f:
         file = f.read()
@@ -148,11 +148,11 @@ def process_search(file_name: str, pattern):
         )
 
 
-print("find the fastest on article_1.txt")
+print("\n\nProcess search on article_1.txt")
 process_search("article_1.txt", "експоненціальні позиції")
 
-print("find the fastest on article_2.txt")
+print("\n\nProcess search on article_2.txt")
 process_search("article_2.txt", "сесій 2097152")
 
-print("look for non existent")
+print("\n\nProcess search for non existent")
 process_search("article_2.txt", "abracadabra")
